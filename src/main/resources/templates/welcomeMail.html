@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="fa" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${variables.subject}"></title>
+    <link th:href="@{css/mailStyle.css}" rel="stylesheet"/>
+</head>
+<body>
+<div class="blue-box">
+    <div class="inner-box">
+        <h3>Welcome to panel</h3>
+        <h5 th:text="Hi + ${variables.fullName}"></h5>
+        <br>
+        <b>All The Best</b>
+    </div>
+</div>
+
+</body>
+</html>

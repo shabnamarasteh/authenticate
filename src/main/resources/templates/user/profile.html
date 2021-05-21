@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="fa" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragment/header::head">
+    <meta charset="UTF-8">
+    <title th:text="profile + ${user.firstName} + ${user.lastName}"></title>
+</head>
+<body>
+<div class="col-lg-12">
+    <h3>Welcome to panel</h3>
+    <h5 th:text="Hi + ${user.email}"></h5>
+    <br>
+    <b>All The Best</b>
+</div>
+</body>
+</html>

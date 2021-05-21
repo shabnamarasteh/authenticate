@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fa" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragment/header::head">
+    <meta charset="UTF-8">
+    <title>ورود</title>
+</head>
+<body>
+
+<div  class="col-md-12">
+    <div class="form-box">
+        <div>ورود</div>
+        <form role="form" id="loginForm" action="/login" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="email" th:text="ایمیل"></label>
+                <input class="form-control" type="text" id="email" name="email" placeholder="ایمیل" />
+            </div>
+            <div class="form-group">
+                <label for="password" th:text="رمزعبور"></label>
+                <input class="form-control" type="password" id="password" name="password" placeholder="رمزعبور" />
+            </div>
+
+            <div class="form-group">
+                <button type="submit" name="submit" id="submit" class="btn btn-success">ورود</button>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

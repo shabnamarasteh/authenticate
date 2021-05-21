@@ -1,0 +1,12 @@
+.blue-box{
+    background: #72d7ef;
+    width: 100%;
+    min-height: 300px;
+}
+.inner-box{
+    padding: 100px;
+    margin: 10px;
+}
+.inner-box > h3{
+    margin: 5px;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fa" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragment/header::head">
+    <meta charset="UTF-8">
+    <title>ثبت نام</title>
+</head>
+<body>
+
+    <div  class="col-md-12">
+        <div class="form-box">
+            <form role="form" id="signUpForm" action="/signup" method="post" enctype="multipart/form-data" th:object="${user}">
+
+                <div class="form-group">
+
+                    <label for="firstName">نام</label>
+                    <input class="form-control" type="text" id="firstName" name="firstName" placeholder="نام" />
+                </div>
+                <div class="form-group">
+                    <label for="lastName">نام خانوادگی</label>
+                    <input class="form-control" type="text" id="lastName" name="lastName" placeholder="نام خانوادگی" />
+                </div>
+                <div class="form-group">
+                    <label for="phoneNumber"> شماره تلفن</label>
+                    <input class="form-control" type="text" id="phoneNumber" name="phoneNumber" placeholder="شماره تلفن" />
+                </div>
+                <div class="form-group">
+                    <label for="email" th:text="ایمیل"></label>
+                    <input class="form-control" type="text" id="email" name="email" placeholder="ایمیل" />
+                </div>
+                <div class="form-group">
+                    <label for="password" th:text="رمزعبور"></label>
+                    <input class="form-control" type="password" id="password" name="password" placeholder="رمزعبور" />
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" name="submit" id="submit" class="btn btn-success">ثبت</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
