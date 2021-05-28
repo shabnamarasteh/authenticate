@@ -61,7 +61,7 @@ public class UserService {
 
         Session session = Session.getInstance(properties, new javax.mail.Authenticator() {
             protected PasswordAuthentication getPasswordAuthentication() {
-                return new PasswordAuthentication("shabnaam.ar94@gmail.com", "sh@bn@mgm@il");
+                return new PasswordAuthentication("", "");
             }
         });
         Message msg = new MimeMessage(session);
